@@ -11,6 +11,7 @@ import NextArrow from "../components/Arrows/NextArrow";
 import PrevArrow from "../components/Arrows/PrevArrow";
 import Card from "../components/Card";
 import { cardData } from "../constants";
+import SubFooter from "../components/SubFooter";
 
 const Home = () => {
     // Updating the carousel settings to add Next and Prev Arrow icons which are clickable.
@@ -62,7 +63,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-wrap justify-center mb-8">
+                <div className="flex flex-wrap justify-center mb-4">
                 {cardData.map((item) => (
                     <Card
                         key={item.id}
@@ -74,6 +75,7 @@ const Home = () => {
                 ))}
                 </div>
             </main>
+            <SubFooter/>
             <div className="fixed bottom-0 left-0 w-full z-50">
                 <Footer />
             </div>
