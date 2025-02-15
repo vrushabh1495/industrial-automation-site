@@ -97,4 +97,105 @@ export const cardData = [
     },
 ];
 
-  
+// These are the list of technologies displayed in technologies page
+export const technologies = [
+  {
+    category: "PLCs & Controllers",
+    description: "We have expert-level hands-on experience with Siemens PLC platforms.",
+    brands: [
+      {
+        name: "Siemens",
+        models: ["Step 5", "Step 7 – 200, 300 & 400 series PLCs", "TIA Portal – 1200 & 1500 series PLCs"],
+      },
+      {
+        name: "Rockwell – Allen Bradley",
+        models: ["PLC 5", "SLC 500", "Micrologix", "CompactLogix", "ControlLogix"],
+      },
+      {
+        name: "Schneider",
+        models: ["Quantum", "M340 Series"],
+      },
+      {
+        name: "Omron",
+        models: ["CX, NJ, CJ Series"],
+      },
+      {
+        name: "Mitsubishi",
+        models: ["FX and Q series"],
+      },
+    ],
+  },
+  {
+    category: "SCADA Systems",
+    description: "SCADA solutions for industrial monitoring and control.",
+    brands: [
+      { name: "Siemens", models: ["WINCC V6.0, WINCC Advanced, WINCC Professional, WINCC Unified"] },
+      { name: "AB", models: ["Factory Talk View Network/Site/Machine"] },
+      { name: "Schneider", models: ["Vijeo Citect 7.30"] },
+      { name: "GE", models: ["iFix"] },
+      { name: "Aveva", models: ["Wonderware"] },
+      { name: "Inductive Automation", models: ["Ignition"] },
+    ],
+  },
+  {
+    category: "Drives & Motion Control",
+    description: "Expertise in AC/DC drives, servo drives, and motion controllers.",
+    brands: [
+      { name: "Siemens", models: ["Sinamics, Simotion, AC/DC Drives"] },
+      { name: "Allen Bradley", models: ["PowerFlex AC/DC drives, Kinetix Servo Drives"] },
+      { name: "Schneider", models: ["Altivar Drives"] },
+    ],
+  },
+  {
+    category: "HMI Solutions",
+    description: "Designing user-friendly HMIs for industrial applications.",
+    brands: [
+      { name: "Siemens", models: ["OP, TP, MP, Comfort Series"] },
+      { name: "Allen Bradley", models: ["PanelView HMIs"] },
+      { name: "Omron", models: ["NA, NB, NS Series"] },
+      { name: "RedLion", models: ["Crimson HMI Systems"] },
+    ],
+  },
+  {
+    category: "Robotics & Vision Systems",
+    description: "Automation with industrial robots and vision systems.",
+    brands: [
+      { name: "Robotics", models: ["ABB, Fanuc, Kuka, Hyundai"] },
+      { name: "Vision Systems", models: ["Omron FQ2, FQM series"] },
+    ],
+  },
+  {
+    category: "Industry 4.0 & IIOT",
+    description: "Developing digital manufacturing solutions and custom apps.",
+    brands: [
+      { name: "Solutions", models: ["Data Collection, Digital Manufacturing, IIOT Integrations"] },
+    ],
+  },
+];
+
+// These are the list of technologies/solutions displayed in itsolutions page
+export const itSolutionsData = {
+  title: "IT Solutions",
+  sections: [
+      {
+          title: "Web Solutions",
+          description: "A professional website creates a lasting impression and expands business reach globally. Our expertise spans the latest technologies:",
+          items: ["ASP.NET, MVC, HTML5, PHP, AJAX, Silverlight", "MS SQL Server, SQL Server 7.0/2000, Oracle, MS Access, Crystal Reports", "IIS, ASP, JavaScript, JAVA, Angular JS, React JS, Node JS"]
+      },
+      {
+          title: "Open Source Solutions",
+          description: "Open-source technologies provide flexibility and cost-effectiveness. We specialize in:",
+          items: ["PHP, WordPress, CakePHP, Magento, OpenCart, Drupal, MySQL, Node JS"]
+      },
+      {
+          title: "Azure/Cloud Solutions",
+          description: "Cloud computing offers scalable and cost-effective IT resources. Our services include:",
+          items: ["Cloud Advisory Services", "Cloud Migration and Development Services", "Deployment and Managed Services", "Windows Azure Services"]
+      },
+      {
+          title: "Database Solutions",
+          description: "Our engineers specialize in designing, implementing, and managing complex database solutions using:",
+          items: ["Oracle, MySQL, SQL Server", "Analysis Services, Integration Services, Reporting Services", "SQL Server Infrastructure Review & Performance Tuning"]
+      }
+  ]
+};
