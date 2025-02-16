@@ -4,13 +4,14 @@ import {
   FaMapMarkerAlt,
   FaLinkedin,
 } from "react-icons/fa";
+import { contact_info } from "../constants";
 
 const SubFooter = () => {
   return (
     <div className="dark:bg-gray-300 text-white w-full py-6 px-4 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
       {/* Phone */}
       <a
-        href="tel:+64211825303"
+        href={`tel:${contact_info.telephone}`}
         className="flex items-center space-x-2 hover:text-gray-200"
       >
         <FaPhone className="text-xl" />
@@ -19,7 +20,7 @@ const SubFooter = () => {
 
       {/* Email */}
       <a
-        href="mailto:sushant@arahant.co.nz"
+        href={`mailto:${contact_info.mail}`}
         className="flex items-center space-x-2 hover:text-gray-200"
       >
         <FaEnvelope className="text-xl" />
@@ -27,7 +28,7 @@ const SubFooter = () => {
       </a>
       {/* LinkedIn */}
       <a
-        href="https://www.linkedin.com/in/sushant-kadole-ab176253"
+        href={contact_info.social}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center space-x-2 hover:text-gray-200"
@@ -37,7 +38,7 @@ const SubFooter = () => {
       </a>
       {/* Location */}
       <a
-        href="https://maps.google.com/?q=518A Great South Road, Rosehill, Auckland 2113"
+        href={contact_info.location}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center space-x-2 hover:text-gray-200"

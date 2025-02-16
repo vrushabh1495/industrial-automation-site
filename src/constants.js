@@ -100,6 +100,36 @@ export const cardData = [
 // These are the list of technologies displayed in technologies page
 export const technologies = [
   {
+    category : "Siemens",
+    description: "Our Engineering Expert Sushant has been working on all Siemens platforms since 2007. He has done many projects ranging from single PLC to 100’s of PLCs, 100s of motion control servo drives, HMIs & SCADA systems.",
+    brands : [
+      {
+        name: "Siemens",
+        models: ["Siemens Range of PLCs and HMI/SCADA"],
+      },
+      {
+        name: "Siemens",
+        models: ["Siemens Legacy PLCs"],
+      },
+      {
+        name: "Siemens",
+        models: ["Siemens S7-1500, S7-1200, PCS7"],
+      },
+      {
+        name: "Siemens",
+        models: ["Siemens Sinamics s120"],
+      },
+      {
+        name: "Siemens",
+        models: ["Siemens G120P varibale speed drive" ],
+      },
+      {
+        name: "Siemens",
+        models: ["Siemens Siemence AC Drives"],
+      },
+    ]
+  },
+  {
     category: "PLCs & Controllers",
     description: "We have expert-level hands-on experience with Siemens PLC platforms.",
     brands: [
@@ -199,3 +229,14 @@ export const itSolutionsData = {
       }
   ]
 };
+
+// These are all the contact details displayed in both subfooter and the contact us page
+export const contact_info = {
+  telephone: "+64211825303",
+  mail:"sushant@arahant.co.nz",
+  location:"https://maps.google.com/?q=518A Great South Road, Rosehill, Auckland 2113",
+  social:"https://www.linkedin.com/in/sushant-kadole-ab176253"
+}
+
+// Email service Endpoint. Making a POST call to this endpoint will trigger an email to the email id registered in this endpoint. 
+export const formspreeEndpoint = "https://formspree.io/f/xzzdjoqy"; 
