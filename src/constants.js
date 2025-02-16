@@ -16,12 +16,12 @@ export var carousel_settings_global = {
 export const landing_page_carousel_data = [
     {
         id: 1,
-        img: "src/assets/carousel1.jpg",
+        img: "dist/carousel1.jpg",
         text: "Redefining Industrial Automation"
     },
     {
         id: 2,
-        img: "src/assets/carousel2.jpg",
+        img: "dist/carousel2.jpg",
         text: "Improving Efficiency"
     }
 ];
@@ -33,7 +33,7 @@ export const landing_page_text_description = "We deliver cutting-edge automation
 export const cardData = [
     {
       id: 1,
-      imgSrc: "src/assets/PLCs.jpg",
+      imgSrc: "dist/PLCs.jpg",
       title: "PLC",
       subtitle: "Programmable Logic Controller",
       description:
@@ -41,7 +41,7 @@ export const cardData = [
     },
     {
         id: 2,
-        imgSrc: "src/assets/IIOT.jpg",
+        imgSrc: "dist/IIOT.jpg",
         title: "IIOT",
         subtitle: "Industrial Internet of Things",
         description:
@@ -49,7 +49,7 @@ export const cardData = [
     },
     {
       id: 3,
-      imgSrc: "src/assets/SCADA.jpg",
+      imgSrc: "dist/SCADA.jpg",
       title: "SCADA",
       subtitle: "Supervisory Control and Data Acquisition",
       description:
@@ -57,7 +57,7 @@ export const cardData = [
     },
     {
       id: 4,
-      imgSrc: "src/assets/HMI.jpg",
+      imgSrc: "dist/HMI.jpg",
       title: "HMI",
       subtitle: "Human-Machine Interface",
       description:
@@ -65,7 +65,7 @@ export const cardData = [
     },
     {
         id: 5,
-        imgSrc: "src/assets/Robotics.jpg",
+        imgSrc: "dist/Robotics.jpg",
         title: "Robotics",
         subtitle: "Smart Automation",
         description:
@@ -73,7 +73,7 @@ export const cardData = [
     },
     {
         id: 6,
-        imgSrc: "src/assets/Drives&Motion.jpg",
+        imgSrc: "dist/Drives&Motion.jpg",
         title: "Drives & Motion",
         subtitle: "Precision Motion Control",
         description:
@@ -81,7 +81,7 @@ export const cardData = [
     },
     {
         id: 7,
-        imgSrc: "src/assets/Vision.jpg",
+        imgSrc: "dist/Vision.jpg",
         title: "Vision",
         subtitle: "Smart Inspection Systems",
         description:
@@ -89,7 +89,7 @@ export const cardData = [
     },
     {
         id: 8,
-        imgSrc: "src/assets/Safety.jpg",
+        imgSrc: "dist/Safety.jpg",
         title: "Safety",
         subtitle: "Industrial Automation Safety",
         description:
