@@ -36,13 +36,13 @@ const About = () => {
                             </p>
                         </div>
                         <div className="max-w-sm">
-                            <img src="/src/assets/industrial_automation_factory.png" alt="Industrial Automation" className="w-full rounded-lg" />
+                            <img src="./industrial_automation_factory.png" alt="Industrial Automation" className="w-full rounded-lg" />
                         </div>
                     </div>
                     {/* Software Development */}
                     <div className="flex items-center p-2 space-x-6 hover:shadow-2xl hover:scale-105 transition-transform duration-300">
                         <div className="max-w-sm">
-                            <img src="/src/assets/software_dev.png" alt="Software Development & DevOps" className="w-full rounded-lg" />
+                            <img src="./software_dev.png" alt="Software Development & DevOps" className="w-full rounded-lg" />
                         </div>
                         <div>
                             <h2 className="text-2xl font-semibold text-gray-800">Software Development & DevOps</h2>
@@ -67,7 +67,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="max-w-sm">
-                            <img src="/src/assets/cloud_database.png" alt="Cloud & Database Solutions" className="w-full rounded-lg" />
+                            <img src="./cloud_database.png" alt="Cloud & Database Solutions" className="w-full rounded-lg" />
                         </div>
                     </div>
 
