@@ -16,12 +16,12 @@ export var carousel_settings_global = {
 export const landing_page_carousel_data = [
     {
         id: 1,
-        img: "dist/carousel1.jpg",
+        img: "./carousel1.jpg",
         text: "Redefining Industrial Automation"
     },
     {
         id: 2,
-        img: "dist/carousel2.jpg",
+        img: "./carousel2.jpg",
         text: "Improving Efficiency"
     }
 ];
@@ -33,7 +33,7 @@ export const landing_page_text_description = "We deliver cutting-edge automation
 export const cardData = [
     {
       id: 1,
-      imgSrc: "dist/PLCs.jpg",
+      imgSrc: "./PLCs.jpg",
       title: "PLC",
       subtitle: "Programmable Logic Controller",
       description:
@@ -41,7 +41,7 @@ export const cardData = [
     },
     {
         id: 2,
-        imgSrc: "dist/IIOT.jpg",
+        imgSrc: "./IIOT.jpg",
         title: "IIOT",
         subtitle: "Industrial Internet of Things",
         description:
@@ -49,7 +49,7 @@ export const cardData = [
     },
     {
       id: 3,
-      imgSrc: "dist/SCADA.jpg",
+      imgSrc: "./SCADA.jpg",
       title: "SCADA",
       subtitle: "Supervisory Control and Data Acquisition",
       description:
@@ -57,7 +57,7 @@ export const cardData = [
     },
     {
       id: 4,
-      imgSrc: "dist/HMI.jpg",
+      imgSrc: "./HMI.jpg",
       title: "HMI",
       subtitle: "Human-Machine Interface",
       description:
@@ -65,7 +65,7 @@ export const cardData = [
     },
     {
         id: 5,
-        imgSrc: "dist/Robotics.jpg",
+        imgSrc: "./Robotics.jpg",
         title: "Robotics",
         subtitle: "Smart Automation",
         description:
@@ -73,7 +73,7 @@ export const cardData = [
     },
     {
         id: 6,
-        imgSrc: "dist/Drives&Motion.jpg",
+        imgSrc: "./Drives&Motion.jpg",
         title: "Drives & Motion",
         subtitle: "Precision Motion Control",
         description:
@@ -81,7 +81,7 @@ export const cardData = [
     },
     {
         id: 7,
-        imgSrc: "dist/Vision.jpg",
+        imgSrc: "./Vision.jpg",
         title: "Vision",
         subtitle: "Smart Inspection Systems",
         description:
@@ -89,7 +89,7 @@ export const cardData = [
     },
     {
         id: 8,
-        imgSrc: "dist/Safety.jpg",
+        imgSrc: "./Safety.jpg",
         title: "Safety",
         subtitle: "Industrial Automation Safety",
         description:
