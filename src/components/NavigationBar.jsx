@@ -3,7 +3,7 @@ const NavigationBar = () => {
         <nav className="bg-white border-gray-200 dark:bg-gray-300 w-full">
             <div className="w-full flex items-center justify-between px-4">
                 <a href="#" className="flex items-center space-x-3">
-                    <img src="src/assets/arahant_logo.jpg" className="h-9" alt="logo" />
+                    <img src="./arahant_logo.jpg" className="h-9" alt="logo" />
                 </a>
                 <div className="flex justify-end flex-1 py-2" id="navbar">
                     <ul className="font-medium flex flex-row items-center space-x-8">
