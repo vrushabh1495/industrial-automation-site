@@ -8,7 +8,7 @@ import { contact_info } from "../constants";
 
 const SubFooter = () => {
   return (
-    <div className=" text-white w-full py-6 px-4 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+    <div className=" text-white w-full py-6 px-4 flex flex-col md:flex-row items-center justify-center space-y-4 bg-white md:space-y-0 md:space-x-8">
       {/* Phone */}
       <a
         href={`tel:${contact_info.telephone}`}

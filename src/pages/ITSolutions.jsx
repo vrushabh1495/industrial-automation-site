@@ -7,11 +7,19 @@ import { itSolutionsData } from "../constants";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const ITSolutions = () => {
-    const [expandedSections, setExpandedSections] = useState({});
+    // Initialize expandedSections state with all indices
+    const [expandedSections, setExpandedSections] = useState(
+        itSolutionsData.sections.reduce((acc, _, index) => {
+            acc[index] = true; // Set all sections to expanded by default
+            return acc;
+        }, {})
+    );
+
+    // Toggle expand/collapse for a specific index
     const toggleSection = (index) => {
         setExpandedSections((prev) => ({
             ...prev,
-            [index]: !prev[index]
+            [index]: !prev[index], // Toggle the expanded state for the clicked section
         }));
     };
 
@@ -26,7 +34,7 @@ const ITSolutions = () => {
             {/* Centered Main Content */}
             <div className="flex-1 flex items-center justify-center px-4 mt-32 pb-24 w-screen">
                 <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl">
-                    <h1 className="text-3xl font-bold text-center text-blue-900">{itSolutionsData.title}</h1>
+                    <h1 className="text-3xl font-bold text-center text-[#f86d4e]">{itSolutionsData.title}</h1>
                     <p className="text-center text-gray-700 mt-2 text-lg">Arahant Services Limited specializes in software, web, database, and app development, along with enterprise solutions, technical consulting, content creation, and training. Our mission is to assist companies and individuals worldwide in streamlining their processes, reducing IT expenses, and improving overall business performance.</p>
 
                     <div className="mt-6">
@@ -34,7 +42,7 @@ const ITSolutions = () => {
                             <div key={index} className="bg-gray-100 rounded-lg mb-4 overflow-hidden">
                                 {/* Section Header */}
                                 <div
-                                    className="flex justify-between items-center px-6 py-4 bg-blue-700 text-white cursor-pointer"
+                                    className="flex justify-between items-center px-6 py-4 bg-[#f86d4e] text-white cursor-pointer"
                                     onClick={() => toggleSection(index)}
                                 >
                                     <h2 className="text-lg font-semibold">{section.title}</h2>
@@ -71,7 +79,6 @@ const ITSolutions = () => {
             </div>
         </div>
     );
-
-}
+};
 
 export default ITSolutions;

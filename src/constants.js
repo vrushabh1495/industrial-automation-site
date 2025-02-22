@@ -146,9 +146,9 @@ export const cardData = [
 // These are the list of technologies displayed in technologies page
 export const technologies = [
   {
-    category : "Siemens",
+    category: "Siemens",
     description: "Our Engineering Expert Sushant has been working on all Siemens platforms since 2007. He has done many projects ranging from single PLC to 100’s of PLCs, 100s of motion control servo drives, HMIs & SCADA systems.",
-    brands : [
+    brands: [
       {
         name: "Siemens",
         models: ["Siemens Range of PLCs and HMI/SCADA"],
@@ -167,13 +167,13 @@ export const technologies = [
       },
       {
         name: "Siemens",
-        models: ["Siemens G120P varibale speed drive" ],
+        models: ["Siemens G120P variable speed drive"],
       },
       {
         name: "Siemens",
-        models: ["Siemens Siemence AC Drives"],
+        models: ["Siemens AC Drives"],
       },
-    ]
+    ],
   },
   {
     category: "PLCs & Controllers",
