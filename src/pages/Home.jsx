@@ -22,11 +22,14 @@ const Home = () => {
     };
     return (
         <div className="flex flex-col min-h-screen">
+            {/* Fixed Header */}
             <div className="fixed top-0 left-0 w-full z-50">
                 <Header />
                 <NavigationBar />
             </div>
-            <main className="flex-1 overflow-hidden">
+
+            {/* Main Content */}
+            <main className="flex-1 overflow-hidden pb-32"> {/* Add padding-bottom to prevent overlap */}
                 <div className="relative max-w-[100vw] p-2 pt-16 overflow-hidden h-[60vh]">
                     <Slider {...carousel_settings}>
                         {landing_page_carousel_data.map((item) => (
@@ -49,33 +52,55 @@ const Home = () => {
                         ))}
                     </Slider>
                 </div>
-                <div className="p-8 bg-gray-200 m-2 rounded-2xl">
+
+                <hr className="my-4 mx-16 border-t-2 border-[#f86d4e]" />
+                
+                <div className="text-center my-2 py-2">
+                    <h2 className="text-[#f86d4e] text-2xl font-semibold">Arahant Services - Automating the World</h2>
+                </div>
+                
+                <hr className="my-4 mx-172 border-t-2 border-[#f86d4e]" />
+                
+                <div className="px-8 mx-4 rounded-2xl">
                     <div className="mx-auto text-center">
-                        <p className="text-4xl text-gray-700 font-medium">
+                        <p className="text-3xl text-gray-700">
                             {landing_page_text_description}
                         </p>
                     </div>
                 </div>
+                
+                <hr className="mt-4 mb-2 border-t-2 border-[#f86d4e]" />
+                
                 <div className="pb-2">
-                    <div className="bg-gray-200 m-2 rounded-2xl">
+                    <div className="rounded-2xl">
                         <div className="mx-auto text-center">
-                            <p className="text-4xl text-gray-700 font-medium p-2">Range of Services</p>
+                            <p className="text-2xl text-[#f86d4e] font-medium p-2">Range of Services</p>
                         </div>
                     </div>
                 </div>
+
+                <hr className="mt-2 mb-4 border-t-2 border-[#f86d4e]" />
+                
                 <div className="flex flex-wrap justify-center mb-4">
-                {cardData.map((item) => (
+                    {cardData.map((item) => (
                     <Card
                         key={item.id}
                         imgSrc={item.imgSrc}
                         title={item.title}
                         subtitle={item.subtitle}
                         description={item.description}
+                        backText={item.backText}
                     />
-                ))}
+                    ))}
                 </div>
             </main>
-            <SubFooter/>
+
+            {/* Fixed SubFooter */}
+            <div className="fixed bottom-0 left-0 w-full z-40 bg-white shadow-md">
+                <SubFooter />
+            </div>
+
+            {/* Fixed Footer */}
             <div className="fixed bottom-0 left-0 w-full z-50">
                 <Footer />
             </div>

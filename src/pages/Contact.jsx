@@ -61,14 +61,14 @@ const Contact = () => {
                             <FaPhone className="text-blue-700 text-3xl" />
                             <h2 className="mt-2 font-semibold">Phone</h2>
                             <a href={`tel:${contact_info.telephone}`} className="text-gray-800 hover:text-blue-700">
-                                +64 211 825 303
+                                +64 211 604 323
                             </a>
                         </div>
                         <div className="flex flex-col items-center bg-gray-50 p-4 rounded-lg shadow-md">
                             <FaEnvelope className="text-blue-700 text-3xl" />
                             <h2 className="mt-2 font-semibold">Email</h2>
                             <a href={`mailto:${contact_info.mail}`} className="text-gray-800 hover:text-blue-700">
-                                sushant@arahant.co.nz
+                                support@arahant.co.nz
                             </a>
                         </div>
                         <div className="flex flex-col items-center bg-gray-50 p-4 rounded-lg shadow-md">
