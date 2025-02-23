@@ -38,6 +38,91 @@ a:hover {
   transform: rotateY(180deg);
 }
 
+/* Custom dots container */
+.custom-dots-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Custom dots */
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.custom-dots li {
+  margin: 0 5px;
+}
+
+.custom-dots li button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #f86d4e;
+  background-color: transparent;
+  color: #f86d4e;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-dots li button:hover,
+.custom-dots li.slick-active button {
+  background-color: #f86d4e;
+  color: white;
+}
+
+/* Ensure logos are responsive */
+.customer-logo-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.customer-logo-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Custom styles for dots container */
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Custom styles for each dot */
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+}
+
+/* Custom styles for the dot button */
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 2px solid #f86d4e;
+  border-radius: 50%;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active dot style */
+.slick-dots li.slick-active button {
+  background-color: #f86d4e;
+}
+
 html {
   scrollbar-width: none;
 }
@@ -80,9 +165,6 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
   }
   button {
     background-color: #f9f9f9;

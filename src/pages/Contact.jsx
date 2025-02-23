@@ -95,7 +95,7 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <div className="mt-8">
-                        <h2 className="text-2xl font-semibold text-gray-800 text-center">Send Us a Message</h2>
+                        <h2 className="text-2xl font-semibold text-[#f86d4e] text-center">Send Us a Message</h2>
                         <form className="mt-4" onSubmit={handleSubmit}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <input 

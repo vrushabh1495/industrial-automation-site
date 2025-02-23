@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { landing_page_carousel_data } from "../constants";
 import { landing_page_text_description } from "../constants";
 import { carousel_settings_global } from "../constants";
+import { customerLogos } from "../constants";
 import NextArrow from "../components/Arrows/NextArrow";
 import PrevArrow from "../components/Arrows/PrevArrow";
 import Card from "../components/Card";
@@ -14,6 +15,39 @@ import { cardData } from "../constants";
 import SubFooter from "../components/SubFooter";
 
 const Home = () => {
+    // Carousel settings for the moving customer logos
+    const carousel_settings_customer_logos = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true, 
+        autoplaySpeed: 2000, 
+        responsive: [ 
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
     // Updating the carousel settings to add Next and Prev Arrow icons which are clickable.
     const carousel_settings = {
         ...carousel_settings_global, 
@@ -69,7 +103,7 @@ const Home = () => {
                     </div>
                 </div>
                 
-                <hr className="mt-4 mb-2 border-t-2 border-[#f86d4e]" />
+                <hr className="my-4 mx-16 border-t-2 border-[#f86d4e]" />
                 
                 <div className="pb-2">
                     <div className="rounded-2xl">
@@ -79,7 +113,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <hr className="mt-2 mb-4 border-t-2 border-[#f86d4e]" />
+                <hr className="my-4 mx-16 border-t-2 border-[#f86d4e]" />
                 
                 <div className="flex flex-wrap justify-center mb-4">
                     {cardData.map((item) => (
@@ -92,6 +126,29 @@ const Home = () => {
                         backText={item.backText}
                     />
                     ))}
+                </div>
+                <hr className="my-4 mx-16 border-t-2 border-[#f86d4e]" />
+                <div className="pb-2">
+                    <div className="rounded-2xl">
+                        <div className="mx-auto text-center">
+                            <p className="text-2xl text-[#f86d4e] font-medium p-2">Our Most Trusted Partners</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="relative max-w-[100vw] pb-8 overflow-hidden">
+                    <Slider {...carousel_settings_customer_logos}>
+                        {customerLogos.map((item) => (
+                            <div key={item.id} className="px-1">
+                                <div className="flex items-center justify-center">
+                                    <img 
+                                        src={item.imgSrc} 
+                                        alt={item.text}
+                                        className="w-32 h-32 object-contain" // Adjust logo size
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
             </main>
 

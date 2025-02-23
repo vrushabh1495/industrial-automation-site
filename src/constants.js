@@ -143,6 +143,59 @@ export const cardData = [
   },
 ];
 
+export const customerLogos = [
+  {
+    id:1,
+    imgSrc:"./suntory_logo.png",
+    title:"Suntory Beverages & Food New Zealand Limited"
+  },
+  {
+    id:2,
+    imgSrc:"./coca_cola_logo.png",
+    title:"Coca-Cola Europacific Partners"
+  },
+  {
+    id:3,
+    imgSrc:"./asaleo_logo.png",
+    title:"Asaleo Care Limited"
+  },
+  {
+    id:4,
+    imgSrc:"./fijiwater_logo.png",
+    title:"NATURAL WATERS OF VITI PTE LTD (Fiji Water)"
+  },
+  {
+    id:5,
+    imgSrc:"./waikato_logo.jpeg",
+    title:"The University of Waikato"
+  },
+  {
+    id:6,
+    imgSrc:"./fmi_logo.png",
+    title:"FMI Building Innovation Ltd"
+  },
+  {
+    id:7,
+    imgSrc:"./apl_logo.png",
+    title:"APL NZ"
+  },
+  {
+    id:8,
+    imgSrc:"./db_logo.png",
+    title:"DB Breweries Ltd"
+  },
+  {
+    id:9,
+    imgSrc:"./kingspan_logo.png",
+    title:"KINGSPAN LIMITED"
+  },
+  {
+    id:10,
+    imgSrc:"./paradise_beverages_logo.png",
+    title:"Paradise Beverages Limited"
+  },
+]
+
 // These are the list of technologies displayed in technologies page
 export const technologies = [
   {
